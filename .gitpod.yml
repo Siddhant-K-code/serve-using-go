@@ -9,3 +9,9 @@ tasks:
       yes|sudo apt-get install --reinstall xdg-utils 
       go get && go build ./...
     command: go run .
+
+ports:
+    - name: Go Fileserver
+      port: 8000
+      onOpen: open-browser
+      visibility: private
